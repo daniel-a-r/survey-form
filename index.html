@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Survey Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <h1 id="title">Survey form</h1>
+    <div class="container">
+      <div class="description">
+        <p id="description">
+          Please fill out this form that goes absolutely nowhere!
+        </p>
+      </div>
+
+      <form id="survey-form">
+        <div class="label">
+          <label id="name-label" for="name">* Name:</label>
+        </div>
+        <div class="input">
+          <input
+            type="text"
+            placeholder="Enter your name"
+            id="name"
+            name="name"
+            required
+          />
+        </div>
+
+        <div class="label">
+          <label id="email-label" for="email">* Email:</label>
+        </div>
+        <div class="input">
+          <input
+            type="email"
+            placeholder="Enter your email"
+            id="email"
+            name="email"
+            required
+          />
+        </div>
+
+        <div class="label">
+          <label id="number-label" for="number">* Arbitrary Number:</label>
+        </div>
+        <div class="input">
+          <input
+            type="number"
+            placeholder="Enter any number"
+            id="number"
+            min="1"
+            max="125"
+            name="number"
+            required
+          />
+        </div>
+
+        <div class="label"><label for="dropdown">Dropdown</label></div>
+        <div class="input">
+          <select id="dropdown" name="dropdown"
+            >Select an option
+            <option disabled selected value>Select an option</option>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option2">Option 2</option>
+          </select>
+        </div>
+
+        <div class="label">
+          <label for="radio-buttons">Now click some radio buttons:</label>
+        </div>
+        <div class="input">
+          <input type="radio" name="radio-buttons" value="radio1" /> Radio
+          button 1<br />
+          <input type="radio" name="radio-buttons" value="radio2" /> Radio
+          button 2<br />
+          <input type="radio" name="radio-buttons" value="radio2" /> Radio
+          button 2<br />
+          <input type="radio" name="radio-buttons" value="radio3" /> Radio
+          button 2<br />
+        </div>
+
+        <div class="label">
+          <label for="checkboxes"
+            >Now some checkboxes(check all that apply):</label
+          >
+        </div>
+        <div class="input">
+          <input type="checkbox" name="checkboxes" value="checkbox1" /> Checkbox
+          1<br />
+          <input type="checkbox" name="checkboxes" value="checkbox2" /> Checkbox
+          2<br />
+          <input type="checkbox" name="checkboxes" value="checkbox3" /> Checkbox
+          3<br />
+          <input type="checkbox" name="checkboxes" value="checkbox4" /> Checkbox
+          4<br />
+          <input type="checkbox" name="checkboxes" value="checkbox5" /> Checkbox
+          5<br />
+        </div>
+
+        <div class="label">
+          <label for="textarea"
+            >Now type something that you've always wanted to express:</label
+          >
+        </div>
+        <div class="input">
+          <textarea
+            name="textarea"
+            rows="5"
+            cols="30"
+            placeholder="Enter your comment here"
+          ></textarea>
+        </div>
+
+        <div class="button">
+          <button id="submit" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

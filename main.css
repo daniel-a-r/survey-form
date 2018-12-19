@@ -1,0 +1,72 @@
+body {
+  background-color: #9bbf94;
+  text-align: center;
+}
+
+.container {
+  width: 75%;
+  max-width: 800px;
+  background-color: white;
+  border-radius: 5px;
+  margin-bottom: 25px;
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+
+form {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+}
+
+.label {
+  text-align: right;
+  justify-self: end;
+}
+
+.input {
+  justify-self: start;
+}
+
+input[type="number"],
+input[type="text"],
+input[type="email"],
+select {
+  width: 200px;
+  border: 1px solid #c4c4c4;
+  border-radius: 3px;
+}
+
+textarea {
+  border-radius: 5px;
+  border: 1px solid #c4c4c4;
+}
+
+button {
+  background-color: #428bca;
+  border-radius: 3px;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+}
+
+.button {
+  grid-column: 1/3;
+}
+
+@media screen and (max-width: 500px) {
+  form {
+    grid-template-columns: 1fr;
+  }
+
+  .label {
+    text-align: left;
+    justify-self: start;
+  }
+
+  .input {
+    justify-self: start;
+  }
+}
