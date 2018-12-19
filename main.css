@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-  width: 75%;
+  width: 85%;
   max-width: 800px;
   background-color: white;
   border-radius: 5px;
@@ -83,6 +83,10 @@ button:hover {
 }
 
 @media (min-width: 575px) {
+  .container {
+    width: 75%;
+  }
+
   form {
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
