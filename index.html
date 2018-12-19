@@ -17,17 +17,15 @@
   <body>
     <h1 id="title">Survey form</h1>
     <div class="container">
-      <div class="description">
-        <p id="description">
-          Please fill out this form that goes absolutely nowhere!
-        </p>
-      </div>
+      <p id="description">
+        Please fill out this form that goes absolutely nowhere!
+      </p>
 
       <form id="survey-form">
         <div class="label">
           <label id="name-label" for="name">* Name:</label>
         </div>
-        <div class="input">
+        <div class="input input-field">
           <input
             type="text"
             placeholder="Enter your name"
@@ -40,7 +38,7 @@
         <div class="label">
           <label id="email-label" for="email">* Email:</label>
         </div>
-        <div class="input">
+        <div class="input input-field">
           <input
             type="email"
             placeholder="Enter your email"
@@ -53,7 +51,7 @@
         <div class="label">
           <label id="number-label" for="number">* Arbitrary Number:</label>
         </div>
-        <div class="input">
+        <div class="input input-field">
           <input
             type="number"
             placeholder="Enter any number"
@@ -66,7 +64,7 @@
         </div>
 
         <div class="label"><label for="dropdown">Dropdown</label></div>
-        <div class="input">
+        <div class="input input-field">
           <select id="dropdown" name="dropdown"
             >Select an option
             <option disabled selected value>Select an option</option>
@@ -79,33 +77,51 @@
         <div class="label">
           <label for="radio-buttons">Now click some radio buttons:</label>
         </div>
-        <div class="input">
-          <input type="radio" name="radio-buttons" value="radio1" /> Radio
-          button 1<br />
-          <input type="radio" name="radio-buttons" value="radio2" /> Radio
-          button 2<br />
-          <input type="radio" name="radio-buttons" value="radio2" /> Radio
-          button 2<br />
-          <input type="radio" name="radio-buttons" value="radio3" /> Radio
-          button 2<br />
+        <div class="input radio">
+          <label class="radio-label"
+            ><input type="radio" name="radio-buttons" value="radio1" /> Radio
+            button 1</label
+          >
+          <label class="radio-label"
+            ><input type="radio" name="radio-buttons" value="radio2" /> Radio
+            button 2</label
+          >
+          <label class="radio-label"
+            ><input type="radio" name="radio-buttons" value="radio2" /> Radio
+            button 2</label
+          >
+          <label class="radio-label"
+            ><input type="radio" name="radio-buttons" value="radio3" /> Radio
+            button 2</label
+          >
         </div>
 
         <div class="label">
           <label for="checkboxes"
-            >Now some checkboxes(check all that apply):</label
+            >Now some checkboxes (check all that apply):</label
           >
         </div>
-        <div class="input">
-          <input type="checkbox" name="checkboxes" value="checkbox1" /> Checkbox
-          1<br />
-          <input type="checkbox" name="checkboxes" value="checkbox2" /> Checkbox
-          2<br />
-          <input type="checkbox" name="checkboxes" value="checkbox3" /> Checkbox
-          3<br />
-          <input type="checkbox" name="checkboxes" value="checkbox4" /> Checkbox
-          4<br />
-          <input type="checkbox" name="checkboxes" value="checkbox5" /> Checkbox
-          5<br />
+        <div class="input checkbox">
+          <label class="checkbox-label"
+            ><input type="checkbox" name="checkboxes" value="checkbox1" />
+            Checkbox 1</label
+          >
+          <label class="checkbox-label"
+            ><input type="checkbox" name="checkboxes" value="checkbox2" />
+            Checkbox 2</label
+          >
+          <label class="checkbox-label"
+            ><input type="checkbox" name="checkboxes" value="checkbox3" />
+            Checkbox 3</label
+          >
+          <label class="checkbox-label"
+            ><input type="checkbox" name="checkboxes" value="checkbox4" />
+            Checkbox 4</label
+          >
+          <label class="checkbox-label"
+            ><input type="checkbox" name="checkboxes" value="checkbox5" />
+            Checkbox 5</label
+          >
         </div>
 
         <div class="label">
@@ -113,11 +129,10 @@
             >Now type something that you've always wanted to express:</label
           >
         </div>
-        <div class="input">
+        <div class="input input-field">
           <textarea
             name="textarea"
             rows="5"
-            cols="30"
             placeholder="Enter your comment here"
           ></textarea>
         </div>
